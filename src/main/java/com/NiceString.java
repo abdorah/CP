@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.stream.Collectors;
 
-class NiceString {
+public class NiceString {
 
     public static String longestNiceSubstring(String s) {
 

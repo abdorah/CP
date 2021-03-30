@@ -16,7 +16,7 @@
 | Problem | Solution class name | level |
 | --- | --- | --- |
 |  | FizzBuzz | :snowflake: |
-| [link]() | MaxProfitTransactions | :ocean: |
-| [link]() | NiceString | :snowflake: |
-| [link]() | RegularExpression | :ocean: |
-| [link]() | Search | :snowflake: |
+| [link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | MaxProfitTransactions | :ocean: |
+| [link](https://leetcode.com/problems/longest-nice-substring/) | NiceString | :snowflake: |
+| [link](https://leetcode.com/problems/regular-expression-matching/) | RegularExpression | :ocean: |
+| [link](https://leetcode.com/problems/search-suggestions-system/) | Search | :snowflake: |

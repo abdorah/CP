@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class MaxProfitTransactions {
+class MaxProfitTransactions {
 
     public static int maxProfit(int[] prices) {
         List<Integer> pricesList = new ArrayList<Integer>();
