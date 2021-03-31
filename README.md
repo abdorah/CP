@@ -13,13 +13,15 @@
 
 ---
 
-| Problem | Solution class name | level |
-| --- | --- | --- |
-|  | FizzBuzz | :snowflake: |
-| [link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | MaxProfitTransactions | :ocean: |
-| [link](https://leetcode.com/problems/longest-nice-substring/) | NiceString | :snowflake: |
-| [link](https://leetcode.com/problems/regular-expression-matching/) | RegularExpression | :ocean: |
-| [link](https://leetcode.com/problems/search-suggestions-system/) | Search | :snowflake: |
+## Content
+
+| Problem | Solution class | Test class | level |
+| --- | --- | --- | --- |
+|  | [FizzBuzz](https://github.com/abdorah/CP/blob/master/src/main/java/com/FizzBuzz.java) | [FizzBuzzTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FizzBuzzTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [MaxProfitTransactions](https://github.com/abdorah/CP/blob/master/src/main/java/com/MaxProfitTransactions.java) | [MaxProfitTransactionsTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MaxProfitTransactionsTest.java) | :ocean: |
+| [leetcode](https://leetcode.com/problems/longest-nice-substring/) | [NiceString](https://github.com/abdorah/CP/blob/master/src/main/java/com/NiceString.java) | [NiceStringTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/NiceStringTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/regular-expression-matching/) | [RegularExpression](https://github.com/abdorah/CP/blob/master/src/main/java/com/RegularExpression.java) | [RegularExpressionTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/RegularExpressionTest.java) | :ocean: |
+| [leetcode](https://leetcode.com/problems/search-suggestions-system/) | [Search](https://github.com/abdorah/CP/blob/master/src/main/java/com/Search.java) | [SearchTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/SearchTest.java) | :snowflake: |
 
 ---
 
