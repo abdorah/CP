@@ -21,4 +21,6 @@
 | [link](https://leetcode.com/problems/regular-expression-matching/) | RegularExpression | :ocean: |
 | [link](https://leetcode.com/problems/search-suggestions-system/) | Search | :snowflake: |
 
-⚓ : This rating would be :snowflake: for `easy`, :cyclone: for `medium` and :ocean: for `hard`.
+---
+
+***⚓ : This rating would be :snowflake: for `easy`, :cyclone: for `medium` and :ocean: for `hard`.***
