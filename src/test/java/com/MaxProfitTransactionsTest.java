@@ -61,5 +61,6 @@ public class MaxProfitTransactionsTest {
     {
         int[] prices7 = { 3,2,6,5 };
         assertEquals(4, MaxProfitTransactions.maxProfit(prices7));
+
     }
 }
