@@ -9,34 +9,16 @@ public class MaxProfitTransactions {
 
     public static int maxProfit(int[] prices) {
         List<Integer> pricesList = new ArrayList<Integer>();
-        List<Integer> list = new ArrayList<Integer>();
-        List<Integer> temp = new ArrayList<Integer>();
         List<Integer> clean = new ArrayList<Integer>();
         int result = 0;
-        boolean check = true;
         pricesList = IntStream.of(prices).boxed().collect(Collectors.toList());
         result = maxProfitOfOneTransaction(pricesList);
-        temp = maxProfitLatestInterval(pricesList);
         clean = maxProfitCleaned(pricesList);
         if (result == 0) {
             return 0;
         } else {
-            // int length = temp.get(temp.size() - 1);
-            // for (int i = 0; i < pricesList.size(); i++) {
-            //     // list.add(pricesList.get(i));
-            //     if (i > length) {
-            //         list.add(pricesList.get(i));
-            //     }
-            // }
-            result = result < maxProfitOfOneTransaction(clean) ? result : result + maxProfitOfOneTransaction(clean) ;
+            result = result < maxProfitOfOneTransaction(clean) ? result : result + maxProfitOfOneTransaction(clean);
             return result;
-            // check = list.size() == 0 || list.size() == 1 || pricesList.size() - list.size() == 1 || list.size() == pricesList.size();
-            // if (!check) {
-            //     result += maxProfitOfOneTransaction(list);
-            //     return result;
-            // } else {
-            //     return result;
-            // }
         }
     }
 
@@ -64,8 +46,8 @@ public class MaxProfitTransactions {
             return prices;
         }
         for (i = 0; i < prices.size() - 1; i++) {
-            if (prices.get(i) >= prices.get(i + 1) && prices.get(i) - prices.get(0) <= 
-            maxProfitOfOneTransaction(prices.subList(i + 1, prices.size()))) {
+            if (prices.get(i) >= prices.get(i + 1) && prices.get(i)
+                    - prices.get(0) <= maxProfitOfOneTransaction(prices.subList(i + 1, prices.size()))) {
                 list = prices.subList(i + 1, prices.size());
                 break;
             } else {
@@ -78,14 +60,14 @@ public class MaxProfitTransactions {
     public static List<Integer> maxProfitCleaned(List<Integer> prices) {
         List<Integer> list = new ArrayList<Integer>();
 
-        String pricess = prices.stream().map((m)->{
+        String pricess = prices.stream().map((m) -> {
             return Integer.toString(m);
-        }).reduce((p,n)->{
+        }).reduce((p, n) -> {
             return p + n;
         }).get();
-        String mplis = maxProfitLatestInterval(prices).stream().map((m)->{
+        String mplis = maxProfitLatestInterval(prices).stream().map((m) -> {
             return Integer.toString(m);
-        }).reduce((p,n)->{
+        }).reduce((p, n) -> {
             return p + n;
         }).get();
 
@@ -96,20 +78,3 @@ public class MaxProfitTransactions {
         return list;
     }
 }
-
-
-// List<Integer> list = new ArrayList<Integer>();
-// int i;
-
-// if (prices.size() == 1) {
-//     return prices;
-// }
-// for (i = 0; i < prices.size() - 1; i++) {
-//     if (!(prices.get(i) > prices.get(i + 1) && prices.get(i) - prices.get(0) < maxProfitOfOneTransaction(prices.subList(i + 1, prices.size())))) {
-//         list = prices.subList(i + 1, prices.size());
-//     } else {
-//         list = prices.subList(0, i);
-//         break;
-//     }
-// }
-// return list;
