@@ -23,4 +23,4 @@
 
 ---
 
-***⚓ : This rating would be :snowflake: for `easy`, :cyclone: for `medium` and :ocean: for `hard`.***
+### ***⚓ : This rating would be :snowflake: for `easy`, :cyclone: for `medium` and :ocean: for `hard`.***
