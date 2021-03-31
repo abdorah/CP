@@ -60,6 +60,9 @@ public class MaxProfitTransactions {
     public static List<Integer> maxProfitCleaned(List<Integer> prices) {
         List<Integer> list = new ArrayList<Integer>();
 
+        if (prices.size() == 1 || prices.isEmpty()) {
+            return prices;
+        }
         String pricess = prices.stream().map((m) -> {
             return Integer.toString(m);
         }).reduce((p, n) -> {
@@ -70,11 +73,11 @@ public class MaxProfitTransactions {
         }).reduce((p, n) -> {
             return p + n;
         }).get();
-
         for (String c : pricess.split(mplis)[0].split("")) {
-            list.add(Integer.parseInt(c));
+            if (!c.equals("")) {
+                list.add(Integer.parseInt(c));
+            }
         }
-
         return list;
     }
 }
