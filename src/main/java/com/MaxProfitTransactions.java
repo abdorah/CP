@@ -10,14 +10,16 @@ public class MaxProfitTransactions {
     public static int maxProfit(int[] prices) {
         List<Integer> pricesList = new ArrayList<Integer>();
         List<Integer> clean = new ArrayList<Integer>();
+        List<Integer> temp = new ArrayList<Integer>();
         int result = 0;
         pricesList = IntStream.of(prices).boxed().collect(Collectors.toList());
         result = maxProfitOfOneTransaction(pricesList);
+        temp = maxProfitLatestInterval(pricesList);
         clean = maxProfitCleaned(pricesList);
         if (result == 0) {
             return 0;
         } else {
-            result = result < maxProfitOfOneTransaction(clean) ? result : result + maxProfitOfOneTransaction(clean);
+            result = 0 < maxProfitOfOneTransaction(clean) ? result : result + maxProfitOfOneTransaction(clean);
             return result;
         }
     }
@@ -40,44 +42,75 @@ public class MaxProfitTransactions {
 
     public static List<Integer> maxProfitLatestInterval(List<Integer> prices) {
         List<Integer> list = new ArrayList<Integer>();
-        int i;
-
-        if (prices.size() == 1) {
+        int max = maxProfitOfOneTransaction(prices);
+        int j = 0;
+        if (prices.size() == 1 || max == 0) {
             return prices;
         }
-        for (i = 0; i < prices.size() - 1; i++) {
-            if (prices.get(i) >= prices.get(i + 1) && prices.get(i)
-                    - prices.get(0) <= maxProfitOfOneTransaction(prices.subList(i + 1, prices.size()))) {
-                list = prices.subList(i + 1, prices.size());
+        for (int i = 0; i < prices.size() - 1; i++) {
+            if (prices.get(i) > prices.get(i + 1) && i + 1 < prices.size() - 1) {
+                if (max == prices.get(i) - prices.get(j)) {
+                    list = prices.subList(j, i + 1);
+                    break;
+                } else {
+                    j = i + 1;
+                }
+            }
+            if (i + 1 == prices.size() - 1) {
+                list = prices.subList(j, i + 1);
+                list.add(prices.get(i + 1));
                 break;
-            } else {
-                list = prices.subList(0, i);
             }
         }
         return list;
     }
 
+    // public static List<Integer> maxProfitLatestInterval(List<Integer> prices) {
+    // List<Integer> list = new ArrayList<Integer>();
+    // int i;
+
+    // if (prices.size() == 1) {
+    // return prices;
+    // }
+    // for (i = 0; i < prices.size() - 1; i++) {
+    // if (prices.get(i) >= prices.get(i + 1) && prices.get(i)
+    // - prices.get(0) <= maxProfitOfOneTransaction(prices.subList(i + 1,
+    // prices.size()))) {
+    // list = prices.subList(i + 1, prices.size());
+    // break;
+    // } else {
+    // list = prices.subList(0, i);
+    // }
+    // }
+    // return list;
+    // }
+
     public static List<Integer> maxProfitCleaned(List<Integer> prices) {
         List<Integer> list = new ArrayList<Integer>();
 
-        if (prices.size() == 1 || prices.isEmpty()) {
+        if (prices.size() <= 1) {
             return prices;
-        }
-        String pricess = prices.stream().map((m) -> {
-            return Integer.toString(m);
-        }).reduce((p, n) -> {
-            return p + n;
-        }).get();
-        String mplis = maxProfitLatestInterval(prices).stream().map((m) -> {
-            return Integer.toString(m);
-        }).reduce((p, n) -> {
-            return p + n;
-        }).get();
-        for (String c : pricess.split(mplis)[0].split("")) {
-            if (!c.equals("")) {
-                list.add(Integer.parseInt(c));
+        } else {
+            String pricess = prices.stream().map((m) -> {
+                return Integer.toString(m);
+            }).reduce((p, n) -> {
+                return p + n;
+            }).get();
+            String mplis = maxProfitLatestInterval(prices).stream().map((m) -> {
+                return Integer.toString(m);
+            }).reduce((p, n) -> {
+                return p + n;
+            }).get();
+            if (pricess.equals(mplis)) {
+                return new ArrayList<Integer>();
+            } else {
+                for (String c : pricess.split(mplis)[0].split("")) {
+                    if (!c.equals("")) {
+                        list.add(Integer.parseInt(c));
+                    }
+                }
+                return list;
             }
         }
-        return list;
     }
 }
