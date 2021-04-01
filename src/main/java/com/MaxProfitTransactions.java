@@ -90,9 +90,15 @@ public class MaxProfitTransactions {
             if (pricess.equals(mplis)) {
                 return new ArrayList<Integer>();
             } else {
-                for (String c : pricess.split(mplis)[pricess.split(mplis).length - 1].split("")) {
-                    if (!c.equals("")) {
-                        list.add(Integer.parseInt(c));
+                for (String c : pricess.split(mplis)) {
+                    if (pricess.split(mplis).length >= 1 && pricess.split(mplis)[0].length() <= 1) {
+                        continue;
+                    } else {
+                        for (String v : c.split("")) {
+                            if (!v.equals("")) {
+                                list.add(Integer.parseInt(v));
+                            }
+                        }
                     }
                 }
                 return list;
