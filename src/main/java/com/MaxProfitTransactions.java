@@ -19,7 +19,10 @@ public class MaxProfitTransactions {
         if (result == 0) {
             return 0;
         } else {
-            result = 0 < maxProfitOfOneTransaction(clean) ? result : result + maxProfitOfOneTransaction(clean);
+            if (result != temp.get(temp.size() - 1) - temp.get(0)) {
+                result = temp.get(temp.size() - 1) - temp.get(0);
+            }
+            result = 0 < maxProfitOfOneTransaction(clean) ? result + maxProfitOfOneTransaction(clean) : result;
             return result;
         }
     }
@@ -57,33 +60,16 @@ public class MaxProfitTransactions {
                 }
             }
             if (i + 1 == prices.size() - 1) {
-                list = prices.subList(j, i + 1);
-                list.add(prices.get(i + 1));
+                if (prices.get(i) > prices.get(i + 1)) {
+                    list = prices.subList(j, i + 1);
+                } else {
+                    list = prices.subList(j, i + 2);
+                }
                 break;
             }
         }
         return list;
     }
-
-    // public static List<Integer> maxProfitLatestInterval(List<Integer> prices) {
-    // List<Integer> list = new ArrayList<Integer>();
-    // int i;
-
-    // if (prices.size() == 1) {
-    // return prices;
-    // }
-    // for (i = 0; i < prices.size() - 1; i++) {
-    // if (prices.get(i) >= prices.get(i + 1) && prices.get(i)
-    // - prices.get(0) <= maxProfitOfOneTransaction(prices.subList(i + 1,
-    // prices.size()))) {
-    // list = prices.subList(i + 1, prices.size());
-    // break;
-    // } else {
-    // list = prices.subList(0, i);
-    // }
-    // }
-    // return list;
-    // }
 
     public static List<Integer> maxProfitCleaned(List<Integer> prices) {
         List<Integer> list = new ArrayList<Integer>();
@@ -104,7 +90,7 @@ public class MaxProfitTransactions {
             if (pricess.equals(mplis)) {
                 return new ArrayList<Integer>();
             } else {
-                for (String c : pricess.split(mplis)[0].split("")) {
+                for (String c : pricess.split(mplis)[pricess.split(mplis).length - 1].split("")) {
                     if (!c.equals("")) {
                         list.add(Integer.parseInt(c));
                     }
