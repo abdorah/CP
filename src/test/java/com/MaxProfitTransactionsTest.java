@@ -62,4 +62,11 @@ public class MaxProfitTransactionsTest {
         assertEquals(11, MaxProfitTransactions.maxProfit(prices7));
 
     }
+
+    @Test
+    public void TestCaseNineShouldAnswerWithTrue() {
+        int[] prices7 = { 1, 2, 4, 2, 5, 7, 2, 4, 9, 0 };
+        assertEquals(13, MaxProfitTransactions.maxProfit(prices7));
+
+    }
 }
