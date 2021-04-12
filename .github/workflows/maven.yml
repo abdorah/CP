@@ -24,4 +24,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run All Tests with Maven
-      run: mvn surefire:test -f "/home/kotbi/Documents/Projects/CP/pom.xml"
+      run: mvn surefire:test --file pom.xml
