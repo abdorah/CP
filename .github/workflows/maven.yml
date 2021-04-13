@@ -29,4 +29,6 @@ jobs:
       run: mvn clean:clean --file pom.xml
     - name: Generate JavaDoc
       run: mvn javadoc:javadoc --file pom.xml
+    - name: Prepare documentation to deployment
+      run: cp target/site/apidocs public/
 
