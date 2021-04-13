@@ -21,5 +21,12 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
     - name: Run All Tests with Maven
       run: mvn surefire:test --file pom.xml
+    - name: Clean up workspace
+      run: mvn clean:clean --file pom.xml
+    - name: Generate JavaDoc
+      run: mvn javadoc:javadoc --file pom.xml
+
