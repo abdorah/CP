@@ -1,6 +1,6 @@
 package com;
 
-class RegularExpression {
+public class RegularExpression {
 
     public static boolean isMatch(String text, String pattern) {
 
