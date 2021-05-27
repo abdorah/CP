@@ -1,6 +1,6 @@
 # Competitve Programming
 
-![Badge](https://img.shields.io/badge/Problems-Solving-black) ![Badge](https://img.shields.io/badge/JUnit-4.11-brightgreen) ![Badge](https://img.shields.io/badge/JDK-11-brightgreen)
+![Badge](https://img.shields.io/badge/Problems-Solving-black) ![Badge](https://img.shields.io/badge/JUnit-5.7.1-brightgreen) ![Badge](https://img.shields.io/badge/JDK-11-brightgreen)
 
 
 > This repository is my back yard in which I assemble a selection of compititve programming solutions and problems. Please feel free to enjoy playing and learning from these algorithms!
@@ -22,7 +22,8 @@
 | [leetcode](https://leetcode.com/problems/longest-nice-substring/) | [NiceString](https://github.com/abdorah/CP/blob/master/src/main/java/com/NiceString.java) | [NiceStringTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/NiceStringTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/regular-expression-matching/) | [RegularExpression](https://github.com/abdorah/CP/blob/master/src/main/java/com/RegularExpression.java) | [RegularExpressionTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/RegularExpressionTest.java) | :ocean: |
 | [leetcode](https://leetcode.com/problems/search-suggestions-system/) | [Search](https://github.com/abdorah/CP/blob/master/src/main/java/com/Search.java) | [SearchTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/SearchTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [MedianOfTwoArrays](https://github.com/abdorah/CP/blob/master/src/main/java/com/MedianOfTwoArrays.java) | [MedianOfTwoArraysTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MedianOfTwoArraysTest.java) | :cyclone: |
 
 ---
 
-### ***⚓ : This rating would be :snowflake: for `easy`, :cyclone: for `medium` and :ocean: for `hard`.***
+**⚓ : This rating would be :snowflake: for `easy`, :cyclone: for `medium` and :ocean: for `hard`.**
