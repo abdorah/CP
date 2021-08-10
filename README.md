@@ -24,6 +24,7 @@
 | [leetcode](https://leetcode.com/problems/search-suggestions-system/) | [Search](https://github.com/abdorah/CP/blob/master/src/main/java/com/Search.java) | [SearchTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/SearchTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [MedianOfTwoArrays](https://github.com/abdorah/CP/blob/master/src/main/java/com/MedianOfTwoArrays.java) | [MedianOfTwoArraysTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MedianOfTwoArraysTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | [FancyCharacter](https://github.com/abdorah/CP/blob/master/src/main/java/com/FancyCharacter.java) | [FancyCharacterTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FancyCharacterTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/check-if-move-is-legal/) | [LegalMove](https://github.com/abdorah/CP/blob/master/src/main/java/com/LegalMove.java) | [LegalMoveTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/LegalMoveTest.java) | :ocean: |
 
 ---
 
