@@ -1,7 +1,17 @@
 package com;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ */
+
 public class RegularExpression {
 
+    /**
+     * @param text
+     * @param pattern
+     * @return true if text match pattern and false otherwise
+     */
     public static boolean isMatch(String text, String pattern) {
 
         if (pattern.isEmpty())

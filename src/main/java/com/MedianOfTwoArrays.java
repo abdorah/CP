@@ -2,7 +2,18 @@ package com;
 
 import java.util.stream.IntStream;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ */
+
 public class MedianOfTwoArrays {
+
+    /**
+     * @param nums1
+     * @param nums2
+     * @return the median of two sorted arrays
+     */
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int length = nums1.length + nums2.length;
         int[] arr = IntStream.concat(IntStream.of(nums1), IntStream.of(nums2)).sorted().toArray();

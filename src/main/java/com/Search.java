@@ -5,10 +5,24 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ */
+
 public class Search {
 
+    /**
+     * @see suggestedProducts method to inderstand why we need i to be static
+     * So that we can access values from within a stream
+     */
     static int i;
 
+    /**
+     * @param products
+     * @param searchWord
+     * @return return a list of ordred strings, which are search results of the pattern searchWord in products
+     */
     public static List<List<String>> suggestedProducts(String[] products, String searchWord) {
         var res = new ArrayList<List<String>>();
         Arrays.sort(products);

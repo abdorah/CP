@@ -6,8 +6,17 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.stream.Collectors;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ */
+
 public class NiceString {
 
+    /**
+     * @param s
+     * @return the longest sub-string out of a s
+     */
     public static String longestNiceSubstring(String s) {
 
         var allLowers = new HashSet<String>();

@@ -4,6 +4,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ * @see LegalMove.checkMove
+ */
+
 public class LegalMoveTest {
 
     @Test

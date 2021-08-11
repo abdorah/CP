@@ -1,7 +1,16 @@
 package com;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ */
+
 public class MaxProfitTransactions {
 
+    /**
+     * @param prices
+     * @return max profit possiblr from two consequentives transactions
+     */
     public static int maxProfit(int[] prices) {
 
         int firstBuyingAction = -prices[0];

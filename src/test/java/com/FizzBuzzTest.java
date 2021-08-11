@@ -6,6 +6,12 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ * @see FizzBuzz.fizzBuzz
+ */
+
 public class FizzBuzzTest {
 
     @Test
