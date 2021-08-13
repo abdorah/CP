@@ -45,30 +45,32 @@ public class LegalMove {
         if (linkedList.size() < 3) {
             return false;
         } else {
-            char l = linkedList.peekLast();
-            while ((l == '.' || color == l) && linkedList.size() >= 3) {
-                linkedList.removeLast();
-                l = linkedList.peekLast();
-            }
             linkedList.removeFirst();
-            if (linkedList.size() >= 1 && !linkedList.contains('.') && linkedList.get(0) != color) {
-                return true;
-            } else {
-                return false;
+            char revColor = color == 'W' ? 'B' : 'W';
+            if (linkedList.getFirst() == revColor) {
+                linkedList.removeFirst();
+                for (char v : linkedList) {
+                    if (v == '.') {
+                        return false;
+                    } else if (v == color) {
+                        return true;
+                    }
+                }
             }
+            return false;
         }
     }
 
     public static boolean checkMove(char[][] b, int r, int c, char color) {
-        boolean result1 = checkMoveLeftRight(rotateMatrix(b, r, c, 0), r, c, color);
-        boolean result2 = checkMoveLeftRight(rotateMatrix(b, r, c, 1), r, c, color);
-        boolean result3 = checkMoveLeftRight(rotateMatrix(b, r, c, 2), r, c, color);
-        boolean result4 = checkMoveLeftRight(rotateMatrix(b, r, c, 3), r, c, color);
-        boolean result5 = checkMoveLeftRight(rotateMatrix(b, r, c, 4), r, c, color);
-        boolean result6 = checkMoveLeftRight(rotateMatrix(b, r, c, 5), r, c, color);
-        boolean result7 = checkMoveLeftRight(rotateMatrix(b, r, c, 6), r, c, color);
-        boolean result8 = checkMoveLeftRight(rotateMatrix(b, r, c, 7), r, c, color);
-        boolean result = (result1 ^ result3) || (result2 ^ result4) || (result5 ^ result7) || (result6 ^ result8);
+        boolean result0 = checkMoveLeftRight(rotateMatrix(b, r, c, 0), r, c, color);
+        boolean result1 = checkMoveLeftRight(rotateMatrix(b, r, c, 1), r, c, color);
+        boolean result2 = checkMoveLeftRight(rotateMatrix(b, r, c, 2), r, c, color);
+        boolean result3 = checkMoveLeftRight(rotateMatrix(b, r, c, 3), r, c, color);
+        boolean result4 = checkMoveLeftRight(rotateMatrix(b, r, c, 4), r, c, color);
+        boolean result5 = checkMoveLeftRight(rotateMatrix(b, r, c, 5), r, c, color);
+        boolean result6 = checkMoveLeftRight(rotateMatrix(b, r, c, 6), r, c, color);
+        boolean result7 = checkMoveLeftRight(rotateMatrix(b, r, c, 7), r, c, color);
+        boolean result = (result0 ^ result2) || (result1 ^ result3) || (result4 ^ result6) || (result5 ^ result7);
         return result;
     }
 }

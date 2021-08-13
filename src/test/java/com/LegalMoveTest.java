@@ -72,4 +72,24 @@ public class LegalMoveTest {
                 { '.', 'W', '.', 'W', '.', 'W', '.', 'W' } };
         assertTrue(LegalMove.checkMove(board, 5, 4, 'W'));
     }
+
+    @Test
+    void testCheckMove7() {
+        char[][] board = new char[][] { { 'B', 'B', '.', '.', 'B', 'W', 'W', '.' },
+                { '.', 'W', 'W', '.', 'B', 'W', 'B', 'B' }, { '.', 'W', 'B', 'B', 'W', '.', 'W', '.' },
+                { 'B', '.', '.', 'B', 'W', 'W', 'W', '.' }, { 'W', 'W', 'W', 'B', 'W', '.', 'B', 'W' },
+                { '.', '.', '.', 'W', '.', 'W', '.', 'B' }, { 'B', 'B', 'W', 'B', 'B', 'W', 'W', 'B' },
+                { 'W', '.', 'W', 'W', '.', 'B', '.', 'W' } };
+        assertFalse(LegalMove.checkMove(board, 2, 5, 'W'));
+    }
+
+    @Test
+    void testCheckMove8() {
+        char[][] board = new char[][] { { '.', 'B', 'W', 'B', '.', 'B', '.', '.' },
+                { 'W', 'W', 'B', 'W', 'B', '.', 'B', 'W' }, { 'B', 'W', 'B', 'W', 'W', 'W', '.', 'W' },
+                { 'W', '.', '.', 'B', 'W', 'W', 'W', 'B' }, { '.', 'B', 'W', '.', 'B', 'W', 'W', '.' },
+                { '.', 'W', '.', 'B', 'W', '.', '.', '.' }, { '.', 'W', 'W', 'W', 'W', 'W', 'W', 'B' },
+                { 'W', '.', '.', 'B', '.', 'W', 'W', 'B' } };
+        assertTrue(LegalMove.checkMove(board, 1, 5, 'W'));
+    }
 }
