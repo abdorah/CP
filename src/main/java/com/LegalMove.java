@@ -47,10 +47,11 @@ public class LegalMove {
         } else {
             char l = linkedList.peekLast();
             while ((l == '.' || color == l) && linkedList.size() >= 3) {
-                l = linkedList.pollLast();
+                linkedList.removeLast();
+                l = linkedList.peekLast();
             }
             linkedList.removeFirst();
-            if (linkedList.size() >= 2 && !linkedList.contains('.')) {
+            if (linkedList.size() >= 1 && !linkedList.contains('.') && linkedList.get(0) != color) {
                 return true;
             } else {
                 return false;
