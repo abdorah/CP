@@ -17,7 +17,7 @@
 
 | Problem | Solution class | Test class | level |
 | --- | --- | --- | --- |
-|  | [FizzBuzz](https://github.com/abdorah/CP/blob/master/src/main/java/com/FizzBuzz.java) | [FizzBuzzTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FizzBuzzTest.java) | :snowflake: |
+| [hackerRank](https://www.hackerrank.com/test/143hd7jsid6/questions/521e954e6ff11) | [FizzBuzz](https://github.com/abdorah/CP/blob/master/src/main/java/com/FizzBuzz.java) | [FizzBuzzTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FizzBuzzTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [MaxProfitTransactions](https://github.com/abdorah/CP/blob/master/src/main/java/com/MaxProfitTransactions.java) | [MaxProfitTransactionsTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MaxProfitTransactionsTest.java) | :ocean: |
 | [leetcode](https://leetcode.com/problems/longest-nice-substring/) | [NiceString](https://github.com/abdorah/CP/blob/master/src/main/java/com/NiceString.java) | [NiceStringTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/NiceStringTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/regular-expression-matching/) | [RegularExpression](https://github.com/abdorah/CP/blob/master/src/main/java/com/RegularExpression.java) | [RegularExpressionTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/RegularExpressionTest.java) | :ocean: |
