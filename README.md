@@ -9,7 +9,7 @@
 
 ## Presentation
 
-**These problems I assemble are a selection that I get baisaclly from `hackerRank` and `leetCode`, for which the solutions are implemented in java 11. To get a global sight of this repository you can use the following table of content. It consist of problems and the solution class name. Note that you will find also a simple test for the algorithm in an other class that takes the same name plus "Test" at end. Also, the problems will get a rating based on the time I spent trying to solve it and my humble point of vue.**
+**These problems I assemble are a selection that I get baisaclly from `codeWars`, `hackerRank` and `leetCode`, for which the solutions are implemented in java 11. To get a global sight of this repository you can use the following table of content. It consist of problems and the solution class name. Note that you will find also a simple test for the algorithm in an other class that takes the same name plus "Test" at end. Also, the problems will get a rating based on the time I spent trying to solve it and my humble point of vue.**
 
 ---
 
@@ -25,6 +25,7 @@
 | [leetcode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [MedianOfTwoArrays](https://github.com/abdorah/CP/blob/master/src/main/java/com/MedianOfTwoArrays.java) | [MedianOfTwoArraysTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MedianOfTwoArraysTest.java) | :ocean: |
 | [leetcode](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | [FancyCharacter](https://github.com/abdorah/CP/blob/master/src/main/java/com/FancyCharacter.java) | [FancyCharacterTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FancyCharacterTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/check-if-move-is-legal/) | [LegalMove](https://github.com/abdorah/CP/blob/master/src/main/java/com/LegalMove.java) | [LegalMoveTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/LegalMoveTest.java) | :ocean: |
+| [CodeWars](https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/java) | [FancyCharacter](https://github.com/abdorah/CP/blob/master/src/main/java/com/PhoneNumber.java) | [FancyCharacterTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/PhoneNumberTest.java) | :snowflake: |
 
 ---
 
