@@ -17,7 +17,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldAnswerWithTrue()
     {  
-        List<String> expecteds = List.of("1","2","Buzz","4","Fizz","Buzz","7","8","Buzz","Fizz","11","Buzz","13","14","FizzBuzz");
+        List<String> expecteds = List.of("1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz");
         List<String> actuals = FizzBuzz.fizzBuzz(15);
         for (int i = 0; i < 15; i++) {
             assertTrue(expecteds.get(i).equals(actuals.get(i)));
