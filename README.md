@@ -25,7 +25,7 @@
 | [leetcode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [MedianOfTwoArrays](https://github.com/abdorah/CP/blob/master/src/main/java/com/MedianOfTwoArrays.java) | [MedianOfTwoArraysTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MedianOfTwoArraysTest.java) | :ocean: |
 | [leetcode](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | [FancyCharacter](https://github.com/abdorah/CP/blob/master/src/main/java/com/FancyCharacter.java) | [FancyCharacterTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FancyCharacterTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/check-if-move-is-legal/) | [LegalMove](https://github.com/abdorah/CP/blob/master/src/main/java/com/LegalMove.java) | [LegalMoveTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/LegalMoveTest.java) | :ocean: |
-| [CodeWars](https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/java) | [FancyCharacter](https://github.com/abdorah/CP/blob/master/src/main/java/com/PhoneNumber.java) | [FancyCharacterTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/PhoneNumberTest.java) | :snowflake: |
+| [CodeWars](https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/java) | [PhoneNumber](https://github.com/abdorah/CP/blob/master/src/main/java/com/PhoneNumber.java) | [PhoneNumberTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/PhoneNumberTest.java) | :snowflake: |
 
 ---
 
