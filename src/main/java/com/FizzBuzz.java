@@ -17,7 +17,7 @@ public class FizzBuzz {
      */
     public static List<String> fizzBuzz(int n) {
         return Stream.iterate(1, i -> ++i).limit(n).map(e -> {
-            return e % 5 == 0 ? "Fizz" + ("" + (e % 3 == 0 ? "Buzz" : "")) : ("" + (e % 3 == 0 ? "Buzz" : e));
+            return e % 3 == 0 ? "Fizz" + ("" + (e % 5 == 0 ? "Buzz" : "")) : ("" + (e % 5 == 0 ? "Buzz" : e));
         }).collect(Collectors.toList());
     }
 }
