@@ -29,6 +29,7 @@
 | [CodeWars](https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/java) | [PhoneNumber](https://github.com/abdorah/CP/blob/master/src/main/java/com/PhoneNumber.java) | [PhoneNumberTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/PhoneNumberTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | [MinimumTimeTypeWriter](https://github.com/abdorah/CP/blob/master/src/main/java/com/MinimumTimeTypeWriter.java) | [MinimumTimeTypeWriterTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MinimumTimeTypeWriterTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/find-the-middle-index-in-array/) | [MiddleIndex](https://github.com/abdorah/CP/blob/master/src/main/java/com/MiddleIndex.java) | [MiddleIndexTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MiddleIndexTest.java) | :cyclone: |
+| [leetcode](https://leetcode.com/problems/find-all-groups-of-farmland/) | [FarmLand](https://github.com/abdorah/CP/blob/master/src/main/java/com/FarmLand.java) | [FarmLandTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FarmLandTest.java) | :ocean: |
 
 ---
 
