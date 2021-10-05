@@ -19,7 +19,7 @@ public class LegalMove {
      *         point(r,c) till the end of the matrix following on of the eight
      *         directions
      */
-    public static LinkedList<Character> rotateMatrix(char[][] b, int r, int c, int round) {
+    public static LinkedList<Character> pickOneDirection(char[][] b, int r, int c, int round) {
         LinkedList<Character> linkedList = new LinkedList<>();
         switch (round) {
             case 0:
@@ -85,14 +85,14 @@ public class LegalMove {
      * @return boolean that checks if the move is legal for all the eight directions
      */
     public static boolean checkMove(char[][] b, int r, int c, char color) {
-        boolean result0 = checkMoveOneDirection(rotateMatrix(b, r, c, 0), r, c, color);
-        boolean result1 = checkMoveOneDirection(rotateMatrix(b, r, c, 1), r, c, color);
-        boolean result2 = checkMoveOneDirection(rotateMatrix(b, r, c, 2), r, c, color);
-        boolean result3 = checkMoveOneDirection(rotateMatrix(b, r, c, 3), r, c, color);
-        boolean result4 = checkMoveOneDirection(rotateMatrix(b, r, c, 4), r, c, color);
-        boolean result5 = checkMoveOneDirection(rotateMatrix(b, r, c, 5), r, c, color);
-        boolean result6 = checkMoveOneDirection(rotateMatrix(b, r, c, 6), r, c, color);
-        boolean result7 = checkMoveOneDirection(rotateMatrix(b, r, c, 7), r, c, color);
+        boolean result0 = checkMoveOneDirection(pickOneDirection(b, r, c, 0), r, c, color);
+        boolean result1 = checkMoveOneDirection(pickOneDirection(b, r, c, 1), r, c, color);
+        boolean result2 = checkMoveOneDirection(pickOneDirection(b, r, c, 2), r, c, color);
+        boolean result3 = checkMoveOneDirection(pickOneDirection(b, r, c, 3), r, c, color);
+        boolean result4 = checkMoveOneDirection(pickOneDirection(b, r, c, 4), r, c, color);
+        boolean result5 = checkMoveOneDirection(pickOneDirection(b, r, c, 5), r, c, color);
+        boolean result6 = checkMoveOneDirection(pickOneDirection(b, r, c, 6), r, c, color);
+        boolean result7 = checkMoveOneDirection(pickOneDirection(b, r, c, 7), r, c, color);
         boolean result = result0 || result2 || result1 || result3 || result4 || result6 || result5 || result7;
         return result;
     }

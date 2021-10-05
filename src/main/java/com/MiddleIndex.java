@@ -15,7 +15,7 @@ public class MiddleIndex {
      */
     public static int findMiddleIndex(int[] nums) {
         int leftSum = 0;
-        int rightSum = Arrays.stream(nums).skip(0).sum() - nums[0];
+        int rightSum = Arrays.stream(nums).skip(1).sum();
         if (leftSum == rightSum) {
             return 0;
         }
