@@ -31,6 +31,8 @@
 | [leetcode](https://leetcode.com/problems/find-the-middle-index-in-array/) | [MiddleIndex](https://github.com/abdorah/CP/blob/master/src/main/java/com/MiddleIndex.java) | [MiddleIndexTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MiddleIndexTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/find-all-groups-of-farmland/) | [FarmLand](https://github.com/abdorah/CP/blob/master/src/main/java/com/FarmLand.java) | [FarmLandTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/FarmLandTest.java) | :ocean: |
 | [leetcode](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | [MaxConsecutiveAnswers](https://github.com/abdorah/CP/blob/master/src/main/java/com/MaxConsecutiveAnswers.java) | [MaxConsecutiveAnswersTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MaxConsecutiveAnswersTest.java) | :cyclone: |
+| [leetcode](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/) | [MovesToSeats](https://github.com/abdorah/CP/blob/master/src/main/java/com/MovesToSeats.java) | [MovesToSeatsTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/MovesToSeatsTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | [ColoredPiecesGame](https://github.com/abdorah/CP/blob/master/src/main/java/com/ColoredPiecesGame.java) | [ColoredPiecesGameTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/ColoredPiecesGameTest.java) | :cyclone: |
 
 ---
 
