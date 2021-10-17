@@ -9,11 +9,10 @@ import org.junit.jupiter.api.Test;
  * @version 1.1
  * @see RegularExpression.isMatch
  */
-
 public class RegularExpressionTest {
 
-    @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(RegularExpression.isMatch("aaa", "a*aaa"));
-    }
+  @Test
+  public void shouldAnswerWithTrue() {
+    assertTrue(RegularExpression.isMatch("aaa", "a*aaa"));
+  }
 }

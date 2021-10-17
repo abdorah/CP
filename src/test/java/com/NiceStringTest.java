@@ -9,12 +9,10 @@ import org.junit.jupiter.api.Test;
  * @version 1.1
  * @see NiceString.longestNiceSubstring
  */
-
 public class NiceStringTest {
-    
-    @Test
-    public void shouldAnswerWithTrue() {
-        assertEquals(NiceString.longestNiceSubstring("MMmmsdflsmjfsmskkkkkkkkkKsj"), "kkkkkkkkkK");
-    }
 
+  @Test
+  public void shouldAnswerWithTrue() {
+    assertEquals(NiceString.longestNiceSubstring("MMmmsdflsmjfsmskkkkkkkkkKsj"), "kkkkkkkkkK");
+  }
 }

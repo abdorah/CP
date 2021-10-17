@@ -9,10 +9,9 @@ import org.junit.jupiter.api.Test;
  * @version 1.1
  * @see FancyCharacter.makeFancyString
  */
-
 public class FancyCharacterTest {
-    @Test
-    void testMakeFancyString() {
-        assertEquals("leetcode", FancyCharacter.makeFancyString("leeetcode"));
-    }
+  @Test
+  void testMakeFancyString() {
+    assertEquals("leetcode", FancyCharacter.makeFancyString("leeetcode"));
+  }
 }

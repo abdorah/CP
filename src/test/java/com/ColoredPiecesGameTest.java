@@ -9,10 +9,9 @@ import org.junit.jupiter.api.Test;
  * @version 1.1
  * @see ColoredPiecesGame.winnerOfGame
  */
-
 public class ColoredPiecesGameTest {
-    @Test
-    void testWinnerOfGame() {
-        assertTrue(ColoredPiecesGame.winnerOfGame("AAABABB"));
-    }
+  @Test
+  void testWinnerOfGame() {
+    assertTrue(ColoredPiecesGame.winnerOfGame("AAABABB"));
+  }
 }

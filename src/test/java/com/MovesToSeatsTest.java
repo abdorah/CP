@@ -9,11 +9,10 @@ import org.junit.jupiter.api.Test;
  * @version 1.1
  * @see MovesToSeats.minMovesToSeat
  */
-
 public class MovesToSeatsTest {
-    
-    @Test
-    void testMinMovesToSeat() {
-        assertEquals(4, MovesToSeats.minMovesToSeat(new int[]{3,1,5}, new int[]{2,7,4}));
-    }
+
+  @Test
+  void testMinMovesToSeat() {
+    assertEquals(4, MovesToSeats.minMovesToSeat(new int[] {3, 1, 5}, new int[] {2, 7, 4}));
+  }
 }

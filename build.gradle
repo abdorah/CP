@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'com.diffplug.spotless' version '5.17.0'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri('https://plugins.gradle.org/m2/')
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+}
+
+group = 'com'
+version = '3.0'
+description = 'This is a selection of competitive programming solutions and problems.'
+java.sourceCompatibility = JavaVersion.VERSION_11
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java/']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/java/']
+        }
+    }
+}
+
+spotless {
+    java {
+        googleJavaFormat()
+        target 'src/*/java/**/*.java'
+    }
+}
+
+compileJava.dependsOn spotlessApply
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
