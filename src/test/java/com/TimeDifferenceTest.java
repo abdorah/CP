@@ -28,4 +28,10 @@ public class TimeDifferenceTest {
     var timePoints = Arrays.asList(new String[] {"00:00", "04:00", "22:00"});
     assertEquals(120, TimeDifference.findMinDifference(timePoints));
   }
+
+  @Test
+  void testFindMinDifference3() {
+    var timePoints = Arrays.asList(new String[] {"12:12", "00:13"});
+    assertEquals(719, TimeDifference.findMinDifference(timePoints));
+  }
 }

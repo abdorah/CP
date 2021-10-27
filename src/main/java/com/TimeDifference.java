@@ -25,17 +25,20 @@ public class TimeDifference {
             .collect(Collectors.toList());
     int min = 1440;
     int best = 1440;
-    for (int i = 0; i < times.size() - 1; i++) {
-      for (int j = i + 1; j < times.size(); j++) {
-        min =
-            Math.min(
-                (times.get(j) - times.get(i) > 720
-                    ? 1440 - (times.get(j) - times.get(i))
-                    : (times.get(j) - times.get(i))),
-                min);
-        best = Math.min(best, min);
-      }
+    int length = times.size() - 1;
+    for (int i = 0; i < length; i++) {
+      min =
+          Math.min(
+              (times.get(i + 1) - times.get(i) > 720
+                  ? 1440 - (times.get(i + 1) - times.get(i))
+                  : (times.get(i + 1) - times.get(i))),
+              min);
+      best = Math.min(best, min);
     }
-    return best;
+    return Math.min(
+        (times.get(length) - times.get(0) > 720
+            ? 1440 - (times.get(length) - times.get(0))
+            : (times.get(length) - times.get(0))),
+        best);
   }
 }
