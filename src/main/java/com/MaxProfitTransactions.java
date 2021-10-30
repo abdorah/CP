@@ -8,7 +8,7 @@ public class MaxProfitTransactions {
 
   /**
    * @param prices
-   * @return max profit possiblr from two consequentives transactions
+   * @return max profit possible from two consequentives transactions
    */
   public static int maxProfit(int[] prices) {
 
