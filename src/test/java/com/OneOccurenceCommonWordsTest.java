@@ -10,8 +10,12 @@ import org.junit.jupiter.api.Test;
  * @see OneOccurenceCommonWords.countWords
  */
 public class OneOccurenceCommonWordsTest {
-    @Test
-    void testCountWords() {
-        assertEquals(2, OneOccurenceCommonWords.countWords(new String[]{"leetcode","is","amazing","as","is"}, new String[]{"amazing","leetcode","is"}));
-    }
+  @Test
+  void testCountWords() {
+    assertEquals(
+        2,
+        OneOccurenceCommonWords.countWords(
+            new String[] {"leetcode", "is", "amazing", "as", "is"},
+            new String[] {"amazing", "leetcode", "is"}));
+  }
 }
