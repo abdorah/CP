@@ -35,6 +35,7 @@
 | [leetcode](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | [ColoredPiecesGame](https://github.com/abdorah/CP/blob/master/src/main/java/com/ColoredPiecesGame.java) | [ColoredPiecesGameTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/ColoredPiecesGameTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/minimum-time-difference/) | [TimeDifference](https://github.com/abdorah/CP/blob/master/src/main/java/com/TimeDifference.java) | [TimeDifferenceTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/TimeDifferenceTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | [DistinctString](https://github.com/abdorah/CP/blob/master/src/main/java/com/DistinctString.java) | [DistinctStringTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/DistinctStringTest.java) | :cyclone: |
+| [leetcode](https://leetcode.com/problems/count-common-words-with-one-occurrence/) | [OneOccurenceCommonWords](https://github.com/abdorah/CP/blob/master/src/main/java/com/OneOccurenceCommonWords.java) | [OneOccurenceCommonWordsTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/OneOccurenceCommonWordsTest.java) | :snowflake: |
 
 ---
 
