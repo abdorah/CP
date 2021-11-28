@@ -1,6 +1,5 @@
 # Competitve Programming
 
-
 ![Badge](https://img.shields.io/badge/Problems-Solving-black) ![Badge](https://img.shields.io/badge/JUnit-5.7.1-brightgreen) ![Badge](https://img.shields.io/badge/JDK-11-brightgreen) [![Java CI with Gradle](https://github.com/abdorah/CP/actions/workflows/gradle.yml/badge.svg?branch=master)](https://github.com/abdorah/CP/actions/workflows/gradle.yml)
 
 
