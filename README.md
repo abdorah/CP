@@ -1,7 +1,6 @@
 # Competitve Programming
 
-![Badge](https://img.shields.io/badge/Problems-Solving-black) ![Badge](https://img.shields.io/badge/JUnit-5.7.1-brightgreen) ![Badge](https://img.shields.io/badge/JDK-11-brightgreen) [![Java CI with Gradle](https://github.com/abdorah/CP/actions/workflows/gradle.yml/badge.svg?branch=master)](https://github.com/abdorah/CP/actions/workflows/gradle.yml)
-
+![Badge](https://img.shields.io/badge/Problems-Solving-black) ![Badge](https://img.shields.io/badge/JUnit-5.7.1-brightgreen) ![Badge](https://img.shields.io/badge/JDK-17-brightgreen) [![Java CI with Gradle](https://github.com/abdorah/CP/actions/workflows/gradle.yml/badge.svg?branch=master)](https://github.com/abdorah/CP/actions/workflows/gradle.yml)
 
 > This repository is my back yard in which I assemble a selection of competitive programming solutions and problems. Please feel free to enjoy playing and learning from these algorithms!
 
@@ -14,6 +13,8 @@
 ---
 
 ## Content
+
+**19 Problems**
 
 | Problem | Solution class | Test class | level |
 | --- | --- | --- | --- |
