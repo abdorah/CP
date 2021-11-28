@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
-import java.util.stream.Collectors;
 
 /**
  * @author KOTBI Abderrahmane
@@ -54,10 +53,9 @@ public class NiceString {
         for (var c : differences) {
           buffer.addAll(Arrays.asList(s.split(c)));
           buffer =
-              (ArrayList<String>)
-                  buffer.stream().map(e -> longestNiceSubstring(e)).collect(Collectors.toList());
+              new ArrayList<String>(buffer.stream().map(e -> longestNiceSubstring(e)).toList());
           s = buffer.stream().max(Comparator.comparing(e -> e.length())).orElse("");
-          buffer.removeIf(e -> true);
+          buffer.clear();
           buffer.add(s);
           buffer.removeIf(e -> isNotNice(e));
         }

@@ -1,7 +1,6 @@
 package com;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author KOTBI Abderrahmane
@@ -22,7 +21,7 @@ public class TimeDifference {
                       + Integer.parseInt(t.split(":")[1]);
                 })
             .sorted()
-            .collect(Collectors.toList());
+            .toList();
     int min = 1440;
     int best = 1440;
     int length = times.size() - 1;

@@ -1,7 +1,6 @@
 package com;
 
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -24,6 +23,6 @@ public class FizzBuzz {
                   ? "Fizz" + ("" + (e % 5 == 0 ? "Buzz" : ""))
                   : ("" + (e % 5 == 0 ? "Buzz" : e));
             })
-        .collect(Collectors.toList());
+        .toList();
   }
 }
