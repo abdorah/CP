@@ -14,7 +14,7 @@ public class OneOccurenceCommonWords {
    * @return the number of occurences of the String word of the array of Strings words
    */
   public static int numberOfOcurences(String[] words, String word) {
-    return (int) Arrays.asList(words).stream().filter(p -> p.equals(word)).count();
+    return (int) Arrays.stream(words).filter(p -> p.equals(word)).count();
   }
 
   /**

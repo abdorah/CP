@@ -23,16 +23,16 @@ public class Search {
    *     products
    */
   public static List<List<String>> suggestedProducts(String[] products, String searchWord) {
-    var res = new ArrayList<List<String>>();
+    var results = new ArrayList<List<String>>();
     Arrays.sort(products);
-    var targetList = Arrays.asList(products);
-    res.add(targetList.stream().filter((e) -> e.indexOf(searchWord.charAt(0)) == 0).toList());
+    results.add(
+        Arrays.stream(products).filter((e) -> e.indexOf(searchWord.charAt(0)) == 0).toList());
     for (i = 1; i < searchWord.length(); i++) {
-      res.add(
-          res.get(i - 1).stream()
+      results.add(
+          results.get(i - 1).stream()
               .filter(e -> (i < e.length()) && e.charAt(i) == searchWord.charAt(i))
               .toList());
     }
-    return res.stream().map((e) -> e.stream().limit(3).toList()).toList();
+    return results.stream().map((e) -> e.stream().limit(3).toList()).toList();
   }
 }
