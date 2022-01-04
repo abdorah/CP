@@ -37,6 +37,7 @@
 | [leetcode](https://leetcode.com/problems/minimum-time-difference/) | [TimeDifference](https://github.com/abdorah/CP/blob/master/src/main/java/com/TimeDifference.java) | [TimeDifferenceTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/TimeDifferenceTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | [DistinctString](https://github.com/abdorah/CP/blob/master/src/main/java/com/DistinctString.java) | [DistinctStringTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/DistinctStringTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/count-common-words-with-one-occurrence/) | [OneOccurenceCommonWords](https://github.com/abdorah/CP/blob/master/src/main/java/com/OneOccurenceCommonWords.java) | [OneOccurenceCommonWordsTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/OneOccurenceCommonWordsTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/) | [LonguestSentence](https://github.com/abdorah/CP/blob/master/src/main/java/com/LonguestSentence.java) | [LonguestSentenceTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/LonguestSentenceTest.java) | :snowflake: |
 
 ---
 
