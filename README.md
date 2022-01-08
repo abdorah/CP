@@ -38,6 +38,8 @@
 | [leetcode](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | [DistinctString](https://github.com/abdorah/CP/blob/master/src/main/java/com/DistinctString.java) | [DistinctStringTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/DistinctStringTest.java) | :cyclone: |
 | [leetcode](https://leetcode.com/problems/count-common-words-with-one-occurrence/) | [OneOccurenceCommonWords](https://github.com/abdorah/CP/blob/master/src/main/java/com/OneOccurenceCommonWords.java) | [OneOccurenceCommonWordsTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/OneOccurenceCommonWordsTest.java) | :snowflake: |
 | [leetcode](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/) | [LonguestSentence](https://github.com/abdorah/CP/blob/master/src/main/java/com/LonguestSentence.java) | [LonguestSentenceTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/LonguestSentenceTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/capitalize-the-title/) | [CapitilizedString](https://github.com/abdorah/CP/blob/master/src/main/java/com/CapitilizedString.java) | [CapitilizedStringTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/CapitilizedStringTest.java) | :snowflake: |
+| [leetcode](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | [TwinSum](https://github.com/abdorah/CP/blob/master/src/main/java/com/TwinSum.java) | [TwinSumTest](https://github.com/abdorah/CP/blob/master/src/test/java/com/TwinSumTest.java) | :cyclone: |
 
 ---
 
