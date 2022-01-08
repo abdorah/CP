@@ -3,8 +3,15 @@ package com;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author KOTBI Abderrahmane
+ * @version 1.1
+ */
 public class TwinSum {
 
+    /**
+     * This class has been added from leetcode to define the singly linked list.
+     */
     public static class ListNode {
         int val;
         ListNode next;
@@ -22,6 +29,11 @@ public class TwinSum {
         }
     }
 
+    /**
+     * @param head
+     * @return the maximum sum of pair numbers in the linked list head. You can find detailed explanaition of what are 
+     * pair numbers in the related leetcode problem.
+     */
     public static int pairSum(ListNode head) {
         ListNode acctual = head;
         List<Integer> values = new ArrayList<Integer>();
