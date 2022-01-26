@@ -14,7 +14,7 @@
 
 ## Content
 
-**19 Problems**
+**22 Problems**
 
 | Problem | Solution class | Test class | level |
 | --- | --- | --- | --- |
