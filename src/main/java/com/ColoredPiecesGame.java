@@ -1,14 +1,19 @@
 package com;
 
 /**
+ * Cyclone
+ *
  * @author KOTBI Abderrahmane
  * @version 1.1
+ * @see <a
+ *     href="https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/"><b>Leetcode-2038.
+ *     Remove Colored Pieces if Both Neighbors are the Same Color </b></a>
  */
 public class ColoredPiecesGame {
 
   /**
-   * @param colors
-   * @return true if the winner is 'A' (Alice) is the winner, and false if 'B' (Bobe) is the winner.
+   * @param colors The input string of colors.
+   * @return True if the winner is 'A' (Alice) is the winner, and false if 'B' (Bobe) is the winner.
    */
   public static boolean winnerOfGame(String colors) {
     int aliceScore = 0;

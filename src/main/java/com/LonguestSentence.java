@@ -8,11 +8,15 @@ import java.util.Arrays;
  */
 public class LonguestSentence {
 
-    /**
-     * @param sentences
-     * @return the longest sentence of the array sentences
-     */
-    public static int mostWordsFound(String[] sentences) {
-        return Arrays.stream(sentences).max((a, n) -> a.split(" ").length - n.split(" ").length).get().split(" ").length;
-    }
+  /**
+   * @param sentences
+   * @return the longest sentence of the array sentences
+   */
+  public static int mostWordsFound(String[] sentences) {
+    return Arrays.stream(sentences)
+        .max((a, n) -> a.split(" ").length - n.split(" ").length)
+        .get()
+        .split(" ")
+        .length;
+  }
 }

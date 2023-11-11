@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
  * @see CapitilizedString.capitalizeTitle
  */
 public class CapitilizedStringTest {
-    @Test
-    void testCapitalizeTitle() {
-        assertEquals("Capitalize The Title", CapitilizedString.capitalizeTitle("capiTalIze tHe titLe"));
-    }
+  @Test
+  void testCapitalizeTitle() {
+    assertEquals("Capitalize The Title", CapitilizedString.capitalizeTitle("capiTalIze tHe titLe"));
+  }
 }

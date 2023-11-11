@@ -10,9 +10,12 @@ import org.junit.jupiter.api.Test;
  * @see LonguestSentence.mostWordsFound
  */
 public class LonguestSentenceTest {
-    @Test
-    void testMostWordsFound() {
-        String[] sentences = new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"};
-        assertEquals(6, LonguestSentence.mostWordsFound(sentences));
-    }
+  @Test
+  void testMostWordsFound() {
+    String[] sentences =
+        new String[] {
+          "alice and bob love leetcode", "i think so too", "this is great thanks very much"
+        };
+    assertEquals(6, LonguestSentence.mostWordsFound(sentences));
+  }
 }
